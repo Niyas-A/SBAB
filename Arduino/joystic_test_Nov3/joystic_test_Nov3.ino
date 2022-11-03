@@ -48,8 +48,8 @@ void loop() {
   cmdVelFwd = analogRead (x_key) ;  
   cmdVelFwd = 2*(cmdVelFwd-2047)/4095;
   cmdVelRot = analogRead (y_key) ;
-  cmdVelRot = 2*(cmdVelRot-2047)/4095;
-  if (abs(cmdVelFwd)<0.1){
+  cmdVelRot = -2*(cmdVelRot-2047)/4095;
+  if (abs(cmdVelFwd)<0.2){
     cmdVelFwd=0;                     
   }
   if (cmdVelFwd>1){
@@ -58,7 +58,7 @@ void loop() {
   if (cmdVelFwd<-1){
     cmdVelFwd=-1;                     
   }
-  if (abs(cmdVelRot)<0.12){
+  if (abs(cmdVelRot)<0.2){
     cmdVelRot=0;                     
   }
   if (cmdVelRot>1){
