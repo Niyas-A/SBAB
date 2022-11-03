@@ -210,6 +210,13 @@
 /home/niyas/SBAB/build/beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir
 /home/niyas/SBAB/build/beginner_tutorials/CMakeFiles/std_msgs_generate_messages_py.dir
 /home/niyas/SBAB/build/beginner_tutorials/CMakeFiles/test.dir
+/home/niyas/SBAB/build/man_cntrl/CMakeFiles/install/strip.dir
+/home/niyas/SBAB/build/man_cntrl/CMakeFiles/edit_cache.dir
+/home/niyas/SBAB/build/man_cntrl/CMakeFiles/list_install_components.dir
+/home/niyas/SBAB/build/man_cntrl/CMakeFiles/test.dir
+/home/niyas/SBAB/build/man_cntrl/CMakeFiles/install/local.dir
+/home/niyas/SBAB/build/man_cntrl/CMakeFiles/rebuild_cache.dir
+/home/niyas/SBAB/build/man_cntrl/CMakeFiles/install.dir
 /home/niyas/SBAB/build/razor_imu_9dof/CMakeFiles/install.dir
 /home/niyas/SBAB/build/razor_imu_9dof/CMakeFiles/list_install_components.dir
 /home/niyas/SBAB/build/razor_imu_9dof/CMakeFiles/rebuild_cache.dir

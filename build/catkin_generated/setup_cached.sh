@@ -9,6 +9,7 @@
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/niyas/SBAB/devel:$CMAKE_PREFIX_PATH"
 export LD_LIBRARY_PATH="/home/niyas/SBAB/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/niyas/SBAB/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/niyas/SBAB/build'
 export PYTHONPATH="/home/niyas/SBAB/devel/lib/python2.7/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES='/home/niyas/SBAB/devel/share/common-lisp'
