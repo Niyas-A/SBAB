@@ -8,7 +8,7 @@ Servo ESC;
 #define DIR 2
 #define dirPin 4
 #define stepPin 5
-#define escPin 9
+#define escPin 10
 
 int cmdVelFwd = 0.0;
 int cmdVelRot = 0.0;
