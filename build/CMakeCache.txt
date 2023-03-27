@@ -356,12 +356,6 @@ actionlib_DIR:PATH=/opt/ros/melodic/share/actionlib/cmake
 //The directory containing a CMake configuration file for actionlib_msgs.
 actionlib_msgs_DIR:PATH=/opt/ros/melodic/share/actionlib_msgs/cmake
 
-//Value Computed by CMake
-beginner_tutorials_BINARY_DIR:STATIC=/home/niyas/SBAB/build/beginner_tutorials
-
-//Value Computed by CMake
-beginner_tutorials_SOURCE_DIR:STATIC=/home/niyas/SBAB/src/beginner_tutorials
-
 //The directory containing a CMake configuration file for bond.
 bond_DIR:PATH=/opt/ros/melodic/share/bond/cmake
 
@@ -466,7 +460,7 @@ gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 image_transport_DIR:PATH=/opt/ros/melodic/share/image_transport/cmake
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/melodic/lib/librostime.so
+lib:FILEPATH=/opt/ros/melodic/lib/libtf2.so
 
 //Value Computed by CMake
 man_cntrl_BINARY_DIR:STATIC=/home/niyas/SBAB/build/man_cntrl
@@ -483,14 +477,38 @@ message_generation_DIR:PATH=/opt/ros/melodic/share/message_generation/cmake
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/melodic/share/message_runtime/cmake
 
+//The directory containing a CMake configuration file for move_base.
+move_base_DIR:PATH=/opt/ros/melodic/share/move_base/cmake
+
+//The directory containing a CMake configuration file for move_base_msgs.
+move_base_msgs_DIR:PATH=/opt/ros/melodic/share/move_base_msgs/cmake
+
 //The directory containing a CMake configuration file for nav_msgs.
 nav_msgs_DIR:PATH=/opt/ros/melodic/share/nav_msgs/cmake
+
+//Value Computed by CMake
+navstack_pub_BINARY_DIR:STATIC=/home/niyas/SBAB/build/jetson_nano_bot/navstack_pub
+
+//Value Computed by CMake
+navstack_pub_SOURCE_DIR:STATIC=/home/niyas/SBAB/src/jetson_nano_bot/navstack_pub
 
 //The directory containing a CMake configuration file for nodelet.
 nodelet_DIR:PATH=/opt/ros/melodic/share/nodelet/cmake
 
+//Value Computed by CMake
+opencv_BINARY_DIR:STATIC=/home/niyas/SBAB/build/opencv
+
+//Value Computed by CMake
+opencv_SOURCE_DIR:STATIC=/home/niyas/SBAB/src/opencv
+
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/melodic/share/pluginlib/cmake
+
+//Value Computed by CMake
+r2d2_BINARY_DIR:STATIC=/home/niyas/SBAB/build/r2d2
+
+//Value Computed by CMake
+r2d2_SOURCE_DIR:STATIC=/home/niyas/SBAB/src/r2d2
 
 //Value Computed by CMake
 razor_imu_9dof_BINARY_DIR:STATIC=/home/niyas/SBAB/build/razor_imu_9dof
@@ -837,7 +855,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=26
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=28
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
