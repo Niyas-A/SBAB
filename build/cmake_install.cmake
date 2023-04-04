@@ -131,6 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/niyas/SBAB/build/gtest/cmake_install.cmake")
+  include("/home/niyas/SBAB/build/nmea_navsat_driver-melodic-devel/cmake_install.cmake")
   include("/home/niyas/SBAB/build/rosserial/rosserial/cmake_install.cmake")
   include("/home/niyas/SBAB/build/rosserial/rosserial_arduino/cmake_install.cmake")
   include("/home/niyas/SBAB/build/rosserial/rosserial_chibios/cmake_install.cmake")
@@ -154,7 +155,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/niyas/SBAB/build/rosserial/rosserial_embeddedlinux/cmake_install.cmake")
   include("/home/niyas/SBAB/build/rosserial/rosserial_test/cmake_install.cmake")
   include("/home/niyas/SBAB/build/rosserial/rosserial_windows/cmake_install.cmake")
-  include("/home/niyas/SBAB/build/jetson_nano_bot/navstack_pub/cmake_install.cmake")
+  include("/home/niyas/SBAB/build/robot_localization-melodic-devel/cmake_install.cmake")
+  include("/home/niyas/SBAB/build/navstack_pub/cmake_install.cmake")
 
 endif()
 

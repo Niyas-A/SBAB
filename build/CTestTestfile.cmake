@@ -5,6 +5,7 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
+subdirs("nmea_navsat_driver-melodic-devel")
 subdirs("rosserial/rosserial")
 subdirs("rosserial/rosserial_arduino")
 subdirs("rosserial/rosserial_chibios")
@@ -28,4 +29,5 @@ subdirs("realsense-ros/realsense2_camera")
 subdirs("rosserial/rosserial_embeddedlinux")
 subdirs("rosserial/rosserial_test")
 subdirs("rosserial/rosserial_windows")
-subdirs("jetson_nano_bot/navstack_pub")
+subdirs("robot_localization-melodic-devel")
+subdirs("navstack_pub")

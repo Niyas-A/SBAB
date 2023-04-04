@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- Transformation Configuration ... Setting Up the Relationships Between Coordinate Frames --> 
+  <node pkg="tf" type="static_transform_publisher" name="base_link_to_laser" args="0.06 0 0.08 0 0 0 base_link laser 30" />
+  <node pkg="tf" type="static_transform_publisher" name="base_link_to_imu" args="0 0.06 0.02 0 0 0 base_link base_imu_link 30" />
+  <node pkg="tf" type="static_transform_publisher" name="base_link_to_gps" args="0 0.06 0.02 0 0 0 base_link gps 30" />
+
+  <!-- Wheel Odometry Publisher --> 
+  <!-- Subscribe: /frontTicks,/backTicks,/steerTicks,/initial_2d -->
+  <!-- Publish: /odom_data_euler, /odom_data_quat --> 
+  <node pkg="navstack_pub" type="odom_pub2.py" name="odom_pub2">
+  </node>  
+
+  <!--group ns="/SBAB" --> 
+  <rosparam command="load" file="$(find navstack_pub)/param/ekf_params.yaml" />
+  <rosparam command="load" file="$(find navstack_pub)/param/navsat_params.yaml" />
+  
+  <node pkg="robot_localization" type="ekf_localization_node" name="ekf_se_odom" clear_params="true"/>
+
+  <node pkg="robot_localization" type="ekf_localization_node" name="ekf_se_map" clear_params="true">
+    <remap from="odometry/filtered" to="odometry/filtered_map"/>
+  </node>
+
+  <node pkg="robot_localization" type="navsat_transform_node" name="navsat_transform" clear_params="true" output="screen">
+      <remap from="odometry/filtered" to="odometry/filtered_map"/>
+      <remap from="/gps/fix" to="/fix"/>
+      <remap from="/imu/data" to="/imu"/>
+  </node>
+  <!--/group -->
+
+</launch>
