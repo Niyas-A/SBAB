@@ -6,5 +6,5 @@ CXX_FLAGS = -O2 -g -DNDEBUG -fPIC   -Wall -Werror -std=gnu++14
 
 CXX_DEFINES = -DEIGEN_MPL2_ONLY -DEIGEN_NO_DEBUG -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"robot_localization\" -Dukf_localization_nodelet_EXPORTS
 
-CXX_INCLUDES = -I/home/niyas/SBAB/devel/include -I/home/niyas/SBAB/src/robot_localization-melodic-devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3 
+CXX_INCLUDES = -I/home/sbclab/SBAB/devel/include -I/home/sbclab/SBAB/src/robot_localization-melodic-devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3 
 

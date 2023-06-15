@@ -1,4 +1,4 @@
-prefix=/home/niyas/SBAB/devel
+prefix=/home/sbclab/SBAB/devel
 
 Name: r2d2
 Description: Description of r2d2

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/niyas/SBAB/src
+CMAKE_SOURCE_DIR = /home/sbclab/SBAB/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/niyas/SBAB/build
+CMAKE_BINARY_DIR = /home/sbclab/SBAB/build
 
 # Utility rule file for geometry_msgs_generate_messages_py.
 
@@ -63,10 +63,10 @@ opencv/CMakeFiles/geometry_msgs_generate_messages_py.dir/build: geometry_msgs_ge
 .PHONY : opencv/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 
 opencv/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean:
-	cd /home/niyas/SBAB/build/opencv && $(CMAKE_COMMAND) -P CMakeFiles/geometry_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/sbclab/SBAB/build/opencv && $(CMAKE_COMMAND) -P CMakeFiles/geometry_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : opencv/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 
 opencv/CMakeFiles/geometry_msgs_generate_messages_py.dir/depend:
-	cd /home/niyas/SBAB/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/niyas/SBAB/src /home/niyas/SBAB/src/opencv /home/niyas/SBAB/build /home/niyas/SBAB/build/opencv /home/niyas/SBAB/build/opencv/CMakeFiles/geometry_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sbclab/SBAB/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sbclab/SBAB/src /home/sbclab/SBAB/src/opencv /home/sbclab/SBAB/build /home/sbclab/SBAB/build/opencv /home/sbclab/SBAB/build/opencv/CMakeFiles/geometry_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : opencv/CMakeFiles/geometry_msgs_generate_messages_py.dir/depend
 

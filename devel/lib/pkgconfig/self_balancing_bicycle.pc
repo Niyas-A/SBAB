@@ -1,0 +1,8 @@
+prefix=/home/sbclab/SBAB/devel
+
+Name: self_balancing_bicycle
+Description: Description of self_balancing_bicycle
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

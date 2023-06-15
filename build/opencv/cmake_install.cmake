@@ -1,8 +1,8 @@
-# Install script for directory: /home/niyas/SBAB/src/opencv
+# Install script for directory: /home/sbclab/SBAB/src/opencv
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/niyas/SBAB/install")
+  set(CMAKE_INSTALL_PREFIX "/home/sbclab/SBAB/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/niyas/SBAB/build/opencv/catkin_generated/installspace/opencv.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/sbclab/SBAB/build/opencv/catkin_generated/installspace/opencv.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opencv/cmake" TYPE FILE FILES
-    "/home/niyas/SBAB/build/opencv/catkin_generated/installspace/opencvConfig.cmake"
-    "/home/niyas/SBAB/build/opencv/catkin_generated/installspace/opencvConfig-version.cmake"
+    "/home/sbclab/SBAB/build/opencv/catkin_generated/installspace/opencvConfig.cmake"
+    "/home/sbclab/SBAB/build/opencv/catkin_generated/installspace/opencvConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opencv" TYPE FILE FILES "/home/niyas/SBAB/src/opencv/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/opencv" TYPE FILE FILES "/home/sbclab/SBAB/src/opencv/package.xml")
 endif()
 

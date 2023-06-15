@@ -1,8 +1,8 @@
-# Install script for directory: /home/niyas/SBAB/src/nmea_navsat_driver-melodic-devel
+# Install script for directory: /home/sbclab/SBAB/src/nmea_navsat_driver-melodic-devel
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/niyas/SBAB/install")
+  set(CMAKE_INSTALL_PREFIX "/home/sbclab/SBAB/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,34 +38,34 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/niyas/SBAB/build/nmea_navsat_driver-melodic-devel/catkin_generated/safe_execute_install.cmake")
+  include("/home/sbclab/SBAB/build/nmea_navsat_driver-melodic-devel/catkin_generated/safe_execute_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/niyas/SBAB/build/nmea_navsat_driver-melodic-devel/catkin_generated/installspace/nmea_navsat_driver.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/sbclab/SBAB/build/nmea_navsat_driver-melodic-devel/catkin_generated/installspace/nmea_navsat_driver.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/nmea_navsat_driver/cmake" TYPE FILE FILES
-    "/home/niyas/SBAB/build/nmea_navsat_driver-melodic-devel/catkin_generated/installspace/nmea_navsat_driverConfig.cmake"
-    "/home/niyas/SBAB/build/nmea_navsat_driver-melodic-devel/catkin_generated/installspace/nmea_navsat_driverConfig-version.cmake"
+    "/home/sbclab/SBAB/build/nmea_navsat_driver-melodic-devel/catkin_generated/installspace/nmea_navsat_driverConfig.cmake"
+    "/home/sbclab/SBAB/build/nmea_navsat_driver-melodic-devel/catkin_generated/installspace/nmea_navsat_driverConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/nmea_navsat_driver" TYPE FILE FILES "/home/niyas/SBAB/src/nmea_navsat_driver-melodic-devel/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/nmea_navsat_driver" TYPE FILE FILES "/home/sbclab/SBAB/src/nmea_navsat_driver-melodic-devel/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/nmea_navsat_driver" TYPE PROGRAM FILES
-    "/home/niyas/SBAB/src/nmea_navsat_driver-melodic-devel/scripts/nmea_serial_driver"
-    "/home/niyas/SBAB/src/nmea_navsat_driver-melodic-devel/scripts/nmea_socket_driver"
-    "/home/niyas/SBAB/src/nmea_navsat_driver-melodic-devel/scripts/nmea_topic_driver"
-    "/home/niyas/SBAB/src/nmea_navsat_driver-melodic-devel/scripts/nmea_topic_serial_reader"
+    "/home/sbclab/SBAB/src/nmea_navsat_driver-melodic-devel/scripts/nmea_serial_driver"
+    "/home/sbclab/SBAB/src/nmea_navsat_driver-melodic-devel/scripts/nmea_socket_driver"
+    "/home/sbclab/SBAB/src/nmea_navsat_driver-melodic-devel/scripts/nmea_topic_driver"
+    "/home/sbclab/SBAB/src/nmea_navsat_driver-melodic-devel/scripts/nmea_topic_serial_reader"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/nmea_navsat_driver/launch" TYPE DIRECTORY FILES "/home/niyas/SBAB/src/nmea_navsat_driver-melodic-devel/launch/" FILES_MATCHING REGEX "/[^/]*\\.launch$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/nmea_navsat_driver/launch" TYPE DIRECTORY FILES "/home/sbclab/SBAB/src/nmea_navsat_driver-melodic-devel/launch/" FILES_MATCHING REGEX "/[^/]*\\.launch$")
 endif()
 

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ros_filter.dir/src/ros_filter.cpp.o"
-  "/home/niyas/SBAB/devel/lib/libros_filter.pdb"
-  "/home/niyas/SBAB/devel/lib/libros_filter.so"
+  "/home/sbclab/SBAB/devel/lib/libros_filter.pdb"
+  "/home/sbclab/SBAB/devel/lib/libros_filter.so"
 )
 
 # Per-language clean rules from dependency scanning.

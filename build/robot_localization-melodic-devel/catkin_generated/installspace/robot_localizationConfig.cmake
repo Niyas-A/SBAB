@@ -67,14 +67,14 @@ set(robot_localization_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(robot_localization_SOURCE_PREFIX /home/niyas/SBAB/src/robot_localization-melodic-devel)
-  set(robot_localization_DEVEL_PREFIX /home/niyas/SBAB/devel)
+  set(robot_localization_SOURCE_PREFIX /home/sbclab/SBAB/src/robot_localization-melodic-devel)
+  set(robot_localization_DEVEL_PREFIX /home/sbclab/SBAB/devel)
   set(robot_localization_INSTALL_PREFIX "")
   set(robot_localization_PREFIX ${robot_localization_DEVEL_PREFIX})
 else()
   set(robot_localization_SOURCE_PREFIX "")
   set(robot_localization_DEVEL_PREFIX "")
-  set(robot_localization_INSTALL_PREFIX /home/niyas/SBAB/install)
+  set(robot_localization_INSTALL_PREFIX /home/sbclab/SBAB/install)
   set(robot_localization_PREFIX ${robot_localization_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/niyas/SBAB/install/lib;/home/niyas/SBAB/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/sbclab/SBAB/install/lib;/home/sbclab/SBAB/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

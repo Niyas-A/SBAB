@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/rviz_click_to_2d.dir/src/rviz_click_to_2d.cpp.o"
-  "/home/niyas/SBAB/devel/lib/navstack_pub/rviz_click_to_2d.pdb"
-  "/home/niyas/SBAB/devel/lib/navstack_pub/rviz_click_to_2d"
+  "/home/sbclab/SBAB/devel/lib/navstack_pub/rviz_click_to_2d.pdb"
+  "/home/sbclab/SBAB/devel/lib/navstack_pub/rviz_click_to_2d"
 )
 
 # Per-language clean rules from dependency scanning.

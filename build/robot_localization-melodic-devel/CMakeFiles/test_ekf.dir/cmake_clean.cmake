@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_ekf.dir/test/test_ekf.cpp.o"
-  "/home/niyas/SBAB/devel/lib/robot_localization/test_ekf.pdb"
-  "/home/niyas/SBAB/devel/lib/robot_localization/test_ekf"
+  "/home/sbclab/SBAB/devel/lib/robot_localization/test_ekf.pdb"
+  "/home/sbclab/SBAB/devel/lib/robot_localization/test_ekf"
 )
 
 # Per-language clean rules from dependency scanning.

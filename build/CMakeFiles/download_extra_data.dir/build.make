@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/niyas/SBAB/src
+CMAKE_SOURCE_DIR = /home/sbclab/SBAB/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/niyas/SBAB/build
+CMAKE_BINARY_DIR = /home/sbclab/SBAB/build
 
 # Utility rule file for download_extra_data.
 
@@ -67,6 +67,6 @@ CMakeFiles/download_extra_data.dir/clean:
 .PHONY : CMakeFiles/download_extra_data.dir/clean
 
 CMakeFiles/download_extra_data.dir/depend:
-	cd /home/niyas/SBAB/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/niyas/SBAB/src /home/niyas/SBAB/src /home/niyas/SBAB/build /home/niyas/SBAB/build /home/niyas/SBAB/build/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sbclab/SBAB/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sbclab/SBAB/src /home/sbclab/SBAB/src /home/sbclab/SBAB/build /home/sbclab/SBAB/build /home/sbclab/SBAB/build/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/download_extra_data.dir/depend
 

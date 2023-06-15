@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_ukf_localization_node_interfaces.dir/test/test_ukf_localization_node_interfaces.cpp.o"
-  "/home/niyas/SBAB/devel/lib/robot_localization/test_ukf_localization_node_interfaces.pdb"
-  "/home/niyas/SBAB/devel/lib/robot_localization/test_ukf_localization_node_interfaces"
+  "/home/sbclab/SBAB/devel/lib/robot_localization/test_ukf_localization_node_interfaces.pdb"
+  "/home/sbclab/SBAB/devel/lib/robot_localization/test_ukf_localization_node_interfaces"
 )
 
 # Per-language clean rules from dependency scanning.

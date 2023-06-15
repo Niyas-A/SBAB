@@ -7,4 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/niyas/SBAB/build'
+export PWD='/home/sbclab/SBAB/build'

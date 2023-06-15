@@ -1,8 +1,8 @@
-# Install script for directory: /home/niyas/SBAB/src/navstack_pub
+# Install script for directory: /home/sbclab/SBAB/src/navstack_pub
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/niyas/SBAB/install")
+  set(CMAKE_INSTALL_PREFIX "/home/sbclab/SBAB/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,21 +38,21 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/niyas/SBAB/build/navstack_pub/catkin_generated/installspace/navstack_pub.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/sbclab/SBAB/build/navstack_pub/catkin_generated/installspace/navstack_pub.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/navstack_pub/cmake" TYPE FILE FILES
-    "/home/niyas/SBAB/build/navstack_pub/catkin_generated/installspace/navstack_pubConfig.cmake"
-    "/home/niyas/SBAB/build/navstack_pub/catkin_generated/installspace/navstack_pubConfig-version.cmake"
+    "/home/sbclab/SBAB/build/navstack_pub/catkin_generated/installspace/navstack_pubConfig.cmake"
+    "/home/sbclab/SBAB/build/navstack_pub/catkin_generated/installspace/navstack_pubConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/navstack_pub" TYPE FILE FILES "/home/niyas/SBAB/src/navstack_pub/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/navstack_pub" TYPE FILE FILES "/home/sbclab/SBAB/src/navstack_pub/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/navstack_pub" TYPE PROGRAM FILES "/home/niyas/SBAB/build/navstack_pub/catkin_generated/installspace/odom_pub2.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/navstack_pub" TYPE PROGRAM FILES "/home/sbclab/SBAB/build/navstack_pub/catkin_generated/installspace/odom_pub2.py")
 endif()
 

@@ -1,4 +1,4 @@
-prefix=/home/niyas/SBAB/devel
+prefix=/home/sbclab/SBAB/devel
 
 Name: man_cntrl
 Description: Description of man_cntrl

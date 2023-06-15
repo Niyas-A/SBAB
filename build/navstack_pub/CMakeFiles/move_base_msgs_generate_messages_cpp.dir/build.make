@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/niyas/SBAB/src
+CMAKE_SOURCE_DIR = /home/sbclab/SBAB/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/niyas/SBAB/build
+CMAKE_BINARY_DIR = /home/sbclab/SBAB/build
 
 # Utility rule file for move_base_msgs_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ navstack_pub/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build: move_bas
 .PHONY : navstack_pub/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build
 
 navstack_pub/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/clean:
-	cd /home/niyas/SBAB/build/navstack_pub && $(CMAKE_COMMAND) -P CMakeFiles/move_base_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/sbclab/SBAB/build/navstack_pub && $(CMAKE_COMMAND) -P CMakeFiles/move_base_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : navstack_pub/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/clean
 
 navstack_pub/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/depend:
-	cd /home/niyas/SBAB/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/niyas/SBAB/src /home/niyas/SBAB/src/navstack_pub /home/niyas/SBAB/build /home/niyas/SBAB/build/navstack_pub /home/niyas/SBAB/build/navstack_pub/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sbclab/SBAB/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sbclab/SBAB/src /home/sbclab/SBAB/src/navstack_pub /home/sbclab/SBAB/build /home/sbclab/SBAB/build/navstack_pub /home/sbclab/SBAB/build/navstack_pub/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : navstack_pub/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/depend
 

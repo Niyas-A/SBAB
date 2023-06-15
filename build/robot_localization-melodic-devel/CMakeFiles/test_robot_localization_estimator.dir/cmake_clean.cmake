@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_robot_localization_estimator.dir/test/test_robot_localization_estimator.cpp.o"
-  "/home/niyas/SBAB/devel/lib/robot_localization/test_robot_localization_estimator.pdb"
-  "/home/niyas/SBAB/devel/lib/robot_localization/test_robot_localization_estimator"
+  "/home/sbclab/SBAB/devel/lib/robot_localization/test_robot_localization_estimator.pdb"
+  "/home/sbclab/SBAB/devel/lib/robot_localization/test_robot_localization_estimator"
 )
 
 # Per-language clean rules from dependency scanning.

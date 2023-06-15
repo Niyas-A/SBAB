@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/niyas/SBAB/src
+CMAKE_SOURCE_DIR = /home/sbclab/SBAB/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/niyas/SBAB/build
+CMAKE_BINARY_DIR = /home/sbclab/SBAB/build
 
 # Utility rule file for rosgraph_msgs_generate_messages_eus.
 
@@ -63,10 +63,10 @@ man_cntrl/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build: rosgraph_msg
 .PHONY : man_cntrl/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 
 man_cntrl/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean:
-	cd /home/niyas/SBAB/build/man_cntrl && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/sbclab/SBAB/build/man_cntrl && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : man_cntrl/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 
 man_cntrl/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend:
-	cd /home/niyas/SBAB/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/niyas/SBAB/src /home/niyas/SBAB/src/man_cntrl /home/niyas/SBAB/build /home/niyas/SBAB/build/man_cntrl /home/niyas/SBAB/build/man_cntrl/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sbclab/SBAB/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sbclab/SBAB/src /home/sbclab/SBAB/src/man_cntrl /home/sbclab/SBAB/build /home/sbclab/SBAB/build/man_cntrl /home/sbclab/SBAB/build/man_cntrl/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : man_cntrl/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
 

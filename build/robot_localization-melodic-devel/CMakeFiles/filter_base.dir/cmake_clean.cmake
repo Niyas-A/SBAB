@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/filter_base.dir/src/filter_base.cpp.o"
-  "/home/niyas/SBAB/devel/lib/libfilter_base.pdb"
-  "/home/niyas/SBAB/devel/lib/libfilter_base.so"
+  "/home/sbclab/SBAB/devel/lib/libfilter_base.pdb"
+  "/home/sbclab/SBAB/devel/lib/libfilter_base.so"
 )
 
 # Per-language clean rules from dependency scanning.

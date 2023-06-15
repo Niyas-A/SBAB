@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/niyas/SBAB/src
+CMAKE_SOURCE_DIR = /home/sbclab/SBAB/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/niyas/SBAB/build
+CMAKE_BINARY_DIR = /home/sbclab/SBAB/build
 
 # Utility rule file for run_tests_nmea_navsat_driver.
 
@@ -63,10 +63,10 @@ nmea_navsat_driver-melodic-devel/CMakeFiles/run_tests_nmea_navsat_driver.dir/bui
 .PHONY : nmea_navsat_driver-melodic-devel/CMakeFiles/run_tests_nmea_navsat_driver.dir/build
 
 nmea_navsat_driver-melodic-devel/CMakeFiles/run_tests_nmea_navsat_driver.dir/clean:
-	cd /home/niyas/SBAB/build/nmea_navsat_driver-melodic-devel && $(CMAKE_COMMAND) -P CMakeFiles/run_tests_nmea_navsat_driver.dir/cmake_clean.cmake
+	cd /home/sbclab/SBAB/build/nmea_navsat_driver-melodic-devel && $(CMAKE_COMMAND) -P CMakeFiles/run_tests_nmea_navsat_driver.dir/cmake_clean.cmake
 .PHONY : nmea_navsat_driver-melodic-devel/CMakeFiles/run_tests_nmea_navsat_driver.dir/clean
 
 nmea_navsat_driver-melodic-devel/CMakeFiles/run_tests_nmea_navsat_driver.dir/depend:
-	cd /home/niyas/SBAB/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/niyas/SBAB/src /home/niyas/SBAB/src/nmea_navsat_driver-melodic-devel /home/niyas/SBAB/build /home/niyas/SBAB/build/nmea_navsat_driver-melodic-devel /home/niyas/SBAB/build/nmea_navsat_driver-melodic-devel/CMakeFiles/run_tests_nmea_navsat_driver.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sbclab/SBAB/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sbclab/SBAB/src /home/sbclab/SBAB/src/nmea_navsat_driver-melodic-devel /home/sbclab/SBAB/build /home/sbclab/SBAB/build/nmea_navsat_driver-melodic-devel /home/sbclab/SBAB/build/nmea_navsat_driver-melodic-devel/CMakeFiles/run_tests_nmea_navsat_driver.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : nmea_navsat_driver-melodic-devel/CMakeFiles/run_tests_nmea_navsat_driver.dir/depend
 

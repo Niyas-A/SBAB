@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/niyas/SBAB/src/navstack_pub/src/ekf_odom_pub.cpp
+/home/sbclab/SBAB/src/navstack_pub/src/ekf_odom_pub.cpp
 ros/ros.h
-/home/niyas/SBAB/src/navstack_pub/src/ros/ros.h
+/home/sbclab/SBAB/src/navstack_pub/src/ros/ros.h
 std_msgs/Int16.h
-/home/niyas/SBAB/src/navstack_pub/src/std_msgs/Int16.h
+/home/sbclab/SBAB/src/navstack_pub/src/std_msgs/Int16.h
 nav_msgs/Odometry.h
 -
 geometry_msgs/PoseStamped.h
@@ -211,7 +211,7 @@ string
 -
 vector
 -
-map
+memory
 -
 ros/types.h
 -
@@ -879,7 +879,7 @@ string
 -
 vector
 -
-map
+memory
 -
 ros/types.h
 -
@@ -895,7 +895,7 @@ string
 -
 vector
 -
-map
+memory
 -
 ros/types.h
 -

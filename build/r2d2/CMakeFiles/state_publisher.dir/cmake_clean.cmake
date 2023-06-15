@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/state_publisher.dir/src/state_publisher.cpp.o"
-  "/home/niyas/SBAB/devel/lib/r2d2/state_publisher.pdb"
-  "/home/niyas/SBAB/devel/lib/r2d2/state_publisher"
+  "/home/sbclab/SBAB/devel/lib/r2d2/state_publisher.pdb"
+  "/home/sbclab/SBAB/devel/lib/r2d2/state_publisher"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/niyas/SBAB/src/navstack_pub/src/rviz_click_to_2d.cpp
+/home/sbclab/SBAB/src/navstack_pub/src/rviz_click_to_2d.cpp
 ros/ros.h
-/home/niyas/SBAB/src/navstack_pub/src/ros/ros.h
+/home/sbclab/SBAB/src/navstack_pub/src/ros/ros.h
 geometry_msgs/PoseStamped.h
-/home/niyas/SBAB/src/navstack_pub/src/geometry_msgs/PoseStamped.h
+/home/sbclab/SBAB/src/navstack_pub/src/geometry_msgs/PoseStamped.h
 geometry_msgs/PoseWithCovarianceStamped.h
-/home/niyas/SBAB/src/navstack_pub/src/geometry_msgs/PoseWithCovarianceStamped.h
+/home/sbclab/SBAB/src/navstack_pub/src/geometry_msgs/PoseWithCovarianceStamped.h
 tf/transform_broadcaster.h
 -
 iostream
@@ -935,7 +935,7 @@ string
 -
 vector
 -
-map
+memory
 -
 ros/types.h
 -
@@ -1045,7 +1045,7 @@ string
 -
 vector
 -
-map
+memory
 -
 ros/types.h
 -
@@ -1181,7 +1181,7 @@ string
 -
 vector
 -
-map
+memory
 -
 ros/types.h
 -
@@ -1197,7 +1197,7 @@ string
 -
 vector
 -
-map
+memory
 -
 ros/types.h
 -

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/niyas/SBAB/src
+CMAKE_SOURCE_DIR = /home/sbclab/SBAB/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/niyas/SBAB/build
+CMAKE_BINARY_DIR = /home/sbclab/SBAB/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/niyas/SBAB/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/niyas/SBAB/build/CMakeFiles /home/niyas/SBAB/build/gtest/CMakeFiles/progress.marks
-	cd /home/niyas/SBAB/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/niyas/SBAB/build/CMakeFiles 0
+	cd /home/sbclab/SBAB/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/sbclab/SBAB/build/CMakeFiles /home/sbclab/SBAB/build/gtest/CMakeFiles/progress.marks
+	cd /home/sbclab/SBAB/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sbclab/SBAB/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/niyas/SBAB/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/clean
+	cd /home/sbclab/SBAB/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,17 +154,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/niyas/SBAB/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/preinstall
+	cd /home/sbclab/SBAB/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/niyas/SBAB/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/preinstall
+	cd /home/sbclab/SBAB/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/niyas/SBAB/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/sbclab/SBAB/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -191,6 +191,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/niyas/SBAB/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/sbclab/SBAB/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,0 +1,8 @@
+prefix=/home/sbclab/SBAB/install
+
+Name: bicycle_gazebo
+Description: Description of bicycle_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

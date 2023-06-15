@@ -1,4 +1,4 @@
-prefix=/home/niyas/SBAB/install
+prefix=/home/sbclab/SBAB/install
 
 Name: navstack_pub
 Description: Description of navstack_pub

@@ -1,20 +1,20 @@
 
 "use strict";
 
-let SetPose = require('./SetPose.js')
 let FromLL = require('./FromLL.js')
-let GetState = require('./GetState.js')
-let SetUTMZone = require('./SetUTMZone.js')
+let SetPose = require('./SetPose.js')
 let SetDatum = require('./SetDatum.js')
-let ToLL = require('./ToLL.js')
 let ToggleFilterProcessing = require('./ToggleFilterProcessing.js')
+let ToLL = require('./ToLL.js')
+let SetUTMZone = require('./SetUTMZone.js')
+let GetState = require('./GetState.js')
 
 module.exports = {
-  SetPose: SetPose,
   FromLL: FromLL,
-  GetState: GetState,
-  SetUTMZone: SetUTMZone,
+  SetPose: SetPose,
   SetDatum: SetDatum,
-  ToLL: ToLL,
   ToggleFilterProcessing: ToggleFilterProcessing,
+  ToLL: ToLL,
+  SetUTMZone: SetUTMZone,
+  GetState: GetState,
 };
