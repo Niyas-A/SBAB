@@ -1,2 +1,2 @@
-man_cntrl:navstack_pub:nmea_navsat_driver-melodic-devel:opencv:r2d2:robot_localization-melodic-devel
+husky/husky_base:husky/husky_bringup:husky/husky_control:husky/husky_description:husky/husky_desktop:husky/husky_gazebo:husky/husky_msgs:husky/husky_navigation:husky/husky_robot:husky/husky_simulator:husky/husky_viz:man_cntrl:navstack_pub:nmea_navsat_driver-melodic-devel:opencv:r2d2:robot_localization-melodic-devel
 -DCATKIN_DEVEL_PREFIX=/home/sbclab/SBAB/devel -DCMAKE_INSTALL_PREFIX=/home/sbclab/SBAB/install -G Unix Makefiles

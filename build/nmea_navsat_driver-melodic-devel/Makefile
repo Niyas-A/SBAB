@@ -68,49 +68,16 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
 
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
 
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
+.PHONY : edit_cache/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -124,16 +91,49 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
 
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
+# Special rule for the target test
+test/fast: test
 
-.PHONY : edit_cache/fast
+.PHONY : test/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,94 +168,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-nmea_navsat_driver-melodic-devel/CMakeFiles/run_tests_nmea_navsat_driver.dir/rule:
-	cd /home/sbclab/SBAB/build && $(MAKE) -f CMakeFiles/Makefile2 nmea_navsat_driver-melodic-devel/CMakeFiles/run_tests_nmea_navsat_driver.dir/rule
-.PHONY : nmea_navsat_driver-melodic-devel/CMakeFiles/run_tests_nmea_navsat_driver.dir/rule
+nmea_navsat_driver-melodic-devel/CMakeFiles/clean_test_results_nmea_navsat_driver.dir/rule:
+	cd /home/sbclab/SBAB/build && $(MAKE) -f CMakeFiles/Makefile2 nmea_navsat_driver-melodic-devel/CMakeFiles/clean_test_results_nmea_navsat_driver.dir/rule
+.PHONY : nmea_navsat_driver-melodic-devel/CMakeFiles/clean_test_results_nmea_navsat_driver.dir/rule
 
 # Convenience name for target.
-run_tests_nmea_navsat_driver: nmea_navsat_driver-melodic-devel/CMakeFiles/run_tests_nmea_navsat_driver.dir/rule
+clean_test_results_nmea_navsat_driver: nmea_navsat_driver-melodic-devel/CMakeFiles/clean_test_results_nmea_navsat_driver.dir/rule
 
-.PHONY : run_tests_nmea_navsat_driver
+.PHONY : clean_test_results_nmea_navsat_driver
 
 # fast build rule for target.
-run_tests_nmea_navsat_driver/fast:
-	cd /home/sbclab/SBAB/build && $(MAKE) -f nmea_navsat_driver-melodic-devel/CMakeFiles/run_tests_nmea_navsat_driver.dir/build.make nmea_navsat_driver-melodic-devel/CMakeFiles/run_tests_nmea_navsat_driver.dir/build
-.PHONY : run_tests_nmea_navsat_driver/fast
-
-# Convenience name for target.
-nmea_navsat_driver-melodic-devel/CMakeFiles/_catkin_empty_exported_target.dir/rule:
-	cd /home/sbclab/SBAB/build && $(MAKE) -f CMakeFiles/Makefile2 nmea_navsat_driver-melodic-devel/CMakeFiles/_catkin_empty_exported_target.dir/rule
-.PHONY : nmea_navsat_driver-melodic-devel/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-# Convenience name for target.
-_catkin_empty_exported_target: nmea_navsat_driver-melodic-devel/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-.PHONY : _catkin_empty_exported_target
-
-# fast build rule for target.
-_catkin_empty_exported_target/fast:
-	cd /home/sbclab/SBAB/build && $(MAKE) -f nmea_navsat_driver-melodic-devel/CMakeFiles/_catkin_empty_exported_target.dir/build.make nmea_navsat_driver-melodic-devel/CMakeFiles/_catkin_empty_exported_target.dir/build
-.PHONY : _catkin_empty_exported_target/fast
-
-# Convenience name for target.
-nmea_navsat_driver-melodic-devel/CMakeFiles/_run_tests_nmea_navsat_driver_roslint_package.dir/rule:
-	cd /home/sbclab/SBAB/build && $(MAKE) -f CMakeFiles/Makefile2 nmea_navsat_driver-melodic-devel/CMakeFiles/_run_tests_nmea_navsat_driver_roslint_package.dir/rule
-.PHONY : nmea_navsat_driver-melodic-devel/CMakeFiles/_run_tests_nmea_navsat_driver_roslint_package.dir/rule
-
-# Convenience name for target.
-_run_tests_nmea_navsat_driver_roslint_package: nmea_navsat_driver-melodic-devel/CMakeFiles/_run_tests_nmea_navsat_driver_roslint_package.dir/rule
-
-.PHONY : _run_tests_nmea_navsat_driver_roslint_package
-
-# fast build rule for target.
-_run_tests_nmea_navsat_driver_roslint_package/fast:
-	cd /home/sbclab/SBAB/build && $(MAKE) -f nmea_navsat_driver-melodic-devel/CMakeFiles/_run_tests_nmea_navsat_driver_roslint_package.dir/build.make nmea_navsat_driver-melodic-devel/CMakeFiles/_run_tests_nmea_navsat_driver_roslint_package.dir/build
-.PHONY : _run_tests_nmea_navsat_driver_roslint_package/fast
-
-# Convenience name for target.
-nmea_navsat_driver-melodic-devel/CMakeFiles/roslint_nmea_navsat_driver.dir/rule:
-	cd /home/sbclab/SBAB/build && $(MAKE) -f CMakeFiles/Makefile2 nmea_navsat_driver-melodic-devel/CMakeFiles/roslint_nmea_navsat_driver.dir/rule
-.PHONY : nmea_navsat_driver-melodic-devel/CMakeFiles/roslint_nmea_navsat_driver.dir/rule
-
-# Convenience name for target.
-roslint_nmea_navsat_driver: nmea_navsat_driver-melodic-devel/CMakeFiles/roslint_nmea_navsat_driver.dir/rule
-
-.PHONY : roslint_nmea_navsat_driver
-
-# fast build rule for target.
-roslint_nmea_navsat_driver/fast:
-	cd /home/sbclab/SBAB/build && $(MAKE) -f nmea_navsat_driver-melodic-devel/CMakeFiles/roslint_nmea_navsat_driver.dir/build.make nmea_navsat_driver-melodic-devel/CMakeFiles/roslint_nmea_navsat_driver.dir/build
-.PHONY : roslint_nmea_navsat_driver/fast
-
-# Convenience name for target.
-nmea_navsat_driver-melodic-devel/CMakeFiles/roslint.dir/rule:
-	cd /home/sbclab/SBAB/build && $(MAKE) -f CMakeFiles/Makefile2 nmea_navsat_driver-melodic-devel/CMakeFiles/roslint.dir/rule
-.PHONY : nmea_navsat_driver-melodic-devel/CMakeFiles/roslint.dir/rule
-
-# Convenience name for target.
-roslint: nmea_navsat_driver-melodic-devel/CMakeFiles/roslint.dir/rule
-
-.PHONY : roslint
-
-# fast build rule for target.
-roslint/fast:
-	cd /home/sbclab/SBAB/build && $(MAKE) -f nmea_navsat_driver-melodic-devel/CMakeFiles/roslint.dir/build.make nmea_navsat_driver-melodic-devel/CMakeFiles/roslint.dir/build
-.PHONY : roslint/fast
-
-# Convenience name for target.
-nmea_navsat_driver-melodic-devel/CMakeFiles/_run_tests_nmea_navsat_driver.dir/rule:
-	cd /home/sbclab/SBAB/build && $(MAKE) -f CMakeFiles/Makefile2 nmea_navsat_driver-melodic-devel/CMakeFiles/_run_tests_nmea_navsat_driver.dir/rule
-.PHONY : nmea_navsat_driver-melodic-devel/CMakeFiles/_run_tests_nmea_navsat_driver.dir/rule
-
-# Convenience name for target.
-_run_tests_nmea_navsat_driver: nmea_navsat_driver-melodic-devel/CMakeFiles/_run_tests_nmea_navsat_driver.dir/rule
-
-.PHONY : _run_tests_nmea_navsat_driver
-
-# fast build rule for target.
-_run_tests_nmea_navsat_driver/fast:
-	cd /home/sbclab/SBAB/build && $(MAKE) -f nmea_navsat_driver-melodic-devel/CMakeFiles/_run_tests_nmea_navsat_driver.dir/build.make nmea_navsat_driver-melodic-devel/CMakeFiles/_run_tests_nmea_navsat_driver.dir/build
-.PHONY : _run_tests_nmea_navsat_driver/fast
+clean_test_results_nmea_navsat_driver/fast:
+	cd /home/sbclab/SBAB/build && $(MAKE) -f nmea_navsat_driver-melodic-devel/CMakeFiles/clean_test_results_nmea_navsat_driver.dir/build.make nmea_navsat_driver-melodic-devel/CMakeFiles/clean_test_results_nmea_navsat_driver.dir/build
+.PHONY : clean_test_results_nmea_navsat_driver/fast
 
 # Convenience name for target.
 nmea_navsat_driver-melodic-devel/CMakeFiles/run_tests_nmea_navsat_driver_roslint_package.dir/rule:
@@ -273,19 +198,34 @@ run_tests_nmea_navsat_driver_roslint_package/fast:
 .PHONY : run_tests_nmea_navsat_driver_roslint_package/fast
 
 # Convenience name for target.
-nmea_navsat_driver-melodic-devel/CMakeFiles/clean_test_results_nmea_navsat_driver.dir/rule:
-	cd /home/sbclab/SBAB/build && $(MAKE) -f CMakeFiles/Makefile2 nmea_navsat_driver-melodic-devel/CMakeFiles/clean_test_results_nmea_navsat_driver.dir/rule
-.PHONY : nmea_navsat_driver-melodic-devel/CMakeFiles/clean_test_results_nmea_navsat_driver.dir/rule
+nmea_navsat_driver-melodic-devel/CMakeFiles/roslint_nmea_navsat_driver.dir/rule:
+	cd /home/sbclab/SBAB/build && $(MAKE) -f CMakeFiles/Makefile2 nmea_navsat_driver-melodic-devel/CMakeFiles/roslint_nmea_navsat_driver.dir/rule
+.PHONY : nmea_navsat_driver-melodic-devel/CMakeFiles/roslint_nmea_navsat_driver.dir/rule
 
 # Convenience name for target.
-clean_test_results_nmea_navsat_driver: nmea_navsat_driver-melodic-devel/CMakeFiles/clean_test_results_nmea_navsat_driver.dir/rule
+roslint_nmea_navsat_driver: nmea_navsat_driver-melodic-devel/CMakeFiles/roslint_nmea_navsat_driver.dir/rule
 
-.PHONY : clean_test_results_nmea_navsat_driver
+.PHONY : roslint_nmea_navsat_driver
 
 # fast build rule for target.
-clean_test_results_nmea_navsat_driver/fast:
-	cd /home/sbclab/SBAB/build && $(MAKE) -f nmea_navsat_driver-melodic-devel/CMakeFiles/clean_test_results_nmea_navsat_driver.dir/build.make nmea_navsat_driver-melodic-devel/CMakeFiles/clean_test_results_nmea_navsat_driver.dir/build
-.PHONY : clean_test_results_nmea_navsat_driver/fast
+roslint_nmea_navsat_driver/fast:
+	cd /home/sbclab/SBAB/build && $(MAKE) -f nmea_navsat_driver-melodic-devel/CMakeFiles/roslint_nmea_navsat_driver.dir/build.make nmea_navsat_driver-melodic-devel/CMakeFiles/roslint_nmea_navsat_driver.dir/build
+.PHONY : roslint_nmea_navsat_driver/fast
+
+# Convenience name for target.
+nmea_navsat_driver-melodic-devel/CMakeFiles/_run_tests_nmea_navsat_driver_roslint_package.dir/rule:
+	cd /home/sbclab/SBAB/build && $(MAKE) -f CMakeFiles/Makefile2 nmea_navsat_driver-melodic-devel/CMakeFiles/_run_tests_nmea_navsat_driver_roslint_package.dir/rule
+.PHONY : nmea_navsat_driver-melodic-devel/CMakeFiles/_run_tests_nmea_navsat_driver_roslint_package.dir/rule
+
+# Convenience name for target.
+_run_tests_nmea_navsat_driver_roslint_package: nmea_navsat_driver-melodic-devel/CMakeFiles/_run_tests_nmea_navsat_driver_roslint_package.dir/rule
+
+.PHONY : _run_tests_nmea_navsat_driver_roslint_package
+
+# fast build rule for target.
+_run_tests_nmea_navsat_driver_roslint_package/fast:
+	cd /home/sbclab/SBAB/build && $(MAKE) -f nmea_navsat_driver-melodic-devel/CMakeFiles/_run_tests_nmea_navsat_driver_roslint_package.dir/build.make nmea_navsat_driver-melodic-devel/CMakeFiles/_run_tests_nmea_navsat_driver_roslint_package.dir/build
+.PHONY : _run_tests_nmea_navsat_driver_roslint_package/fast
 
 # Convenience name for target.
 nmea_navsat_driver-melodic-devel/CMakeFiles/run_tests_nmea_navsat_driver_roslint.dir/rule:
@@ -303,6 +243,21 @@ run_tests_nmea_navsat_driver_roslint/fast:
 .PHONY : run_tests_nmea_navsat_driver_roslint/fast
 
 # Convenience name for target.
+nmea_navsat_driver-melodic-devel/CMakeFiles/roslint.dir/rule:
+	cd /home/sbclab/SBAB/build && $(MAKE) -f CMakeFiles/Makefile2 nmea_navsat_driver-melodic-devel/CMakeFiles/roslint.dir/rule
+.PHONY : nmea_navsat_driver-melodic-devel/CMakeFiles/roslint.dir/rule
+
+# Convenience name for target.
+roslint: nmea_navsat_driver-melodic-devel/CMakeFiles/roslint.dir/rule
+
+.PHONY : roslint
+
+# fast build rule for target.
+roslint/fast:
+	cd /home/sbclab/SBAB/build && $(MAKE) -f nmea_navsat_driver-melodic-devel/CMakeFiles/roslint.dir/build.make nmea_navsat_driver-melodic-devel/CMakeFiles/roslint.dir/build
+.PHONY : roslint/fast
+
+# Convenience name for target.
 nmea_navsat_driver-melodic-devel/CMakeFiles/_run_tests_nmea_navsat_driver_roslint.dir/rule:
 	cd /home/sbclab/SBAB/build && $(MAKE) -f CMakeFiles/Makefile2 nmea_navsat_driver-melodic-devel/CMakeFiles/_run_tests_nmea_navsat_driver_roslint.dir/rule
 .PHONY : nmea_navsat_driver-melodic-devel/CMakeFiles/_run_tests_nmea_navsat_driver_roslint.dir/rule
@@ -317,6 +272,36 @@ _run_tests_nmea_navsat_driver_roslint/fast:
 	cd /home/sbclab/SBAB/build && $(MAKE) -f nmea_navsat_driver-melodic-devel/CMakeFiles/_run_tests_nmea_navsat_driver_roslint.dir/build.make nmea_navsat_driver-melodic-devel/CMakeFiles/_run_tests_nmea_navsat_driver_roslint.dir/build
 .PHONY : _run_tests_nmea_navsat_driver_roslint/fast
 
+# Convenience name for target.
+nmea_navsat_driver-melodic-devel/CMakeFiles/run_tests_nmea_navsat_driver.dir/rule:
+	cd /home/sbclab/SBAB/build && $(MAKE) -f CMakeFiles/Makefile2 nmea_navsat_driver-melodic-devel/CMakeFiles/run_tests_nmea_navsat_driver.dir/rule
+.PHONY : nmea_navsat_driver-melodic-devel/CMakeFiles/run_tests_nmea_navsat_driver.dir/rule
+
+# Convenience name for target.
+run_tests_nmea_navsat_driver: nmea_navsat_driver-melodic-devel/CMakeFiles/run_tests_nmea_navsat_driver.dir/rule
+
+.PHONY : run_tests_nmea_navsat_driver
+
+# fast build rule for target.
+run_tests_nmea_navsat_driver/fast:
+	cd /home/sbclab/SBAB/build && $(MAKE) -f nmea_navsat_driver-melodic-devel/CMakeFiles/run_tests_nmea_navsat_driver.dir/build.make nmea_navsat_driver-melodic-devel/CMakeFiles/run_tests_nmea_navsat_driver.dir/build
+.PHONY : run_tests_nmea_navsat_driver/fast
+
+# Convenience name for target.
+nmea_navsat_driver-melodic-devel/CMakeFiles/_run_tests_nmea_navsat_driver.dir/rule:
+	cd /home/sbclab/SBAB/build && $(MAKE) -f CMakeFiles/Makefile2 nmea_navsat_driver-melodic-devel/CMakeFiles/_run_tests_nmea_navsat_driver.dir/rule
+.PHONY : nmea_navsat_driver-melodic-devel/CMakeFiles/_run_tests_nmea_navsat_driver.dir/rule
+
+# Convenience name for target.
+_run_tests_nmea_navsat_driver: nmea_navsat_driver-melodic-devel/CMakeFiles/_run_tests_nmea_navsat_driver.dir/rule
+
+.PHONY : _run_tests_nmea_navsat_driver
+
+# fast build rule for target.
+_run_tests_nmea_navsat_driver/fast:
+	cd /home/sbclab/SBAB/build && $(MAKE) -f nmea_navsat_driver-melodic-devel/CMakeFiles/_run_tests_nmea_navsat_driver.dir/build.make nmea_navsat_driver-melodic-devel/CMakeFiles/_run_tests_nmea_navsat_driver.dir/build
+.PHONY : _run_tests_nmea_navsat_driver/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -324,22 +309,21 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-	@echo "... run_tests_nmea_navsat_driver"
-	@echo "... _catkin_empty_exported_target"
-	@echo "... rebuild_cache"
-	@echo "... _run_tests_nmea_navsat_driver_roslint_package"
-	@echo "... roslint_nmea_navsat_driver"
-	@echo "... roslint"
-	@echo "... _run_tests_nmea_navsat_driver"
-	@echo "... list_install_components"
-	@echo "... run_tests_nmea_navsat_driver_roslint_package"
-	@echo "... install"
-	@echo "... clean_test_results_nmea_navsat_driver"
-	@echo "... test"
-	@echo "... run_tests_nmea_navsat_driver_roslint"
-	@echo "... install/local"
-	@echo "... _run_tests_nmea_navsat_driver_roslint"
 	@echo "... edit_cache"
+	@echo "... install/local"
+	@echo "... test"
+	@echo "... clean_test_results_nmea_navsat_driver"
+	@echo "... install"
+	@echo "... run_tests_nmea_navsat_driver_roslint_package"
+	@echo "... roslint_nmea_navsat_driver"
+	@echo "... _run_tests_nmea_navsat_driver_roslint_package"
+	@echo "... run_tests_nmea_navsat_driver_roslint"
+	@echo "... roslint"
+	@echo "... list_install_components"
+	@echo "... _run_tests_nmea_navsat_driver_roslint"
+	@echo "... rebuild_cache"
+	@echo "... run_tests_nmea_navsat_driver"
+	@echo "... _run_tests_nmea_navsat_driver"
 .PHONY : help
 
 

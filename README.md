@@ -8,5 +8,9 @@ This is a research project on Self Balancing and Autonomous Bicycle (SBAB). The 
 * ```source ./devel/setup.bash```
 * ```roslaunch navstack_pub bicycle_gazebo.launch```
 
-### To be continued
+### Git clones to be done
+
+1. git clone -b melodic-devel https://github.com/husky/husky.git
+
+
 
