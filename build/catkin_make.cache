@@ -1,2 +1,2 @@
-bicycle_gazebo:man_cntrl:navstack_pub:nmea_navsat_driver-melodic-devel:opencv:r2d2:robot_localization-melodic-devel
+man_cntrl:navstack_pub:nmea_navsat_driver-melodic-devel:opencv:r2d2:robot_localization-melodic-devel
 -DCATKIN_DEVEL_PREFIX=/home/sbclab/SBAB/devel -DCMAKE_INSTALL_PREFIX=/home/sbclab/SBAB/install -G Unix Makefiles

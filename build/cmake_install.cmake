@@ -132,7 +132,6 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/sbclab/SBAB/build/gtest/cmake_install.cmake")
   include("/home/sbclab/SBAB/build/nmea_navsat_driver-melodic-devel/cmake_install.cmake")
-  include("/home/sbclab/SBAB/build/bicycle_gazebo/cmake_install.cmake")
   include("/home/sbclab/SBAB/build/man_cntrl/cmake_install.cmake")
   include("/home/sbclab/SBAB/build/opencv/cmake_install.cmake")
   include("/home/sbclab/SBAB/build/r2d2/cmake_install.cmake")
