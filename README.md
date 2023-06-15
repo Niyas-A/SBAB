@@ -8,9 +8,11 @@ This is a research project on Self Balancing and Autonomous Bicycle (SBAB). The 
 * ```source ./devel/setup.bash```
 * ```roslaunch navstack_pub bicycle_gazebo.launch```
 
-### Git clones to be done
+### Git packages to clone:
 
-1. git clone -b melodic-devel https://github.com/husky/husky.git
-
+1. Rosserial- ```git clone https://github.com/ros-drivers/rosserial.git```
+2. Razor IMU 9F- ```git clone https://github.com/ENSTABretagneRobotics/razor_imu_9dof.git```
+3. RPLIDAR ROS-```https://github.com/Slamtec/rplidar_ros.git```
+4. Husky- ```git clone -b melodic-devel https://github.com/husky/husky.git```
 
 
