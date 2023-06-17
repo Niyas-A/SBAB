@@ -14,5 +14,6 @@ This is a research project on Self Balancing and Autonomous Bicycle (SBAB). The 
 2. Razor IMU 9F- ```git clone https://github.com/ENSTABretagneRobotics/razor_imu_9dof.git```
 3. RPLIDAR ROS-```git clone https://github.com/Slamtec/rplidar_ros.git```
 4. Husky- ```git clone -b melodic-devel https://github.com/husky/husky.git```
+5. ZED Wrapper - https://github.com/stereolabs/zed-ros-wrapper.git
 
 
