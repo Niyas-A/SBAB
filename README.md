@@ -6,6 +6,8 @@ This is a research project on Self Balancing and Autonomous Bicycle (SBAB). The 
 * ```catkin_make```
 * ```source ./devel/setup.bash```
 * ```roslaunch navstack_pub bicycle_gazebo.launch```
+### Rviz simulation of the bicycle
+* ```roslaunch navstack_pub laserscan_test.launch```
 
 ### Git packages to clone:
 
